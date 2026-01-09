@@ -11,23 +11,23 @@
 
 ### 👨‍💻 About Me
 
-- 🔭 I’m currently working on **[Project Name or "Exciting personal projects"]**
-- 🌱 I’m currently learning **[Language/Framework, e.g., TypeScript, Rust, Go]**
-- 👯 I’m looking to collaborate on **[Open Source projects / Frontend ideas]**
-- 💬 Ask me about **[Your main skill, e.g., React, Python, Cloud Architecture]**
-- ⚡ Fun fact: **[Insert a fun fact or hobby here!]**
+- 🔭 I’m currently working on **Treffortly and Aylian Studios**
+- 🌱 I’m currently learning **Rust and distributed systems/Robotics**
+- 💬 Ask me about **APIs, testing, CI/CD, AI**
 
 ---
 
 ### 🛠️ Languages and Tools
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=3776AB" alt="Python" />
-  <img src="https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=git&logoColor=white&color=F05032" alt="Git" />
-  <img src="https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=2496ED" alt="Docker" />
-  </p>
-
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Rust-black?style=flat&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white" alt="C#" />
+  
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git" />
+</p>
 ---
 
 ### 📊 GitHub Stats
@@ -44,6 +44,5 @@
 ### 📫 Connect with Me
 
 <p align="left">
-<a href="https://linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Wesleyvdk" /></a>
-<a href="mailto:your-email@example.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="mailto:ehz@treffortly.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
