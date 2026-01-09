@@ -5,6 +5,12 @@ on:
     # Runs at 00:00 UTC every day
     - cron: '0 0 * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'scripts/**'
 
 permissions:
   contents: write
