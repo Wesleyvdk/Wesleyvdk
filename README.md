@@ -34,8 +34,7 @@
 
 <div align="center">
   <a href="https://github.com/Wesleyvdk">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Wesleyvdk&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wesleyvdk&layout=compact&theme=tokyonight"/>
+    <img src="./github-stats.svg" alt="Wesleyvdk's Custom Stats" />
   </a>
 </div>
 
