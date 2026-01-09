@@ -1,5 +1,5 @@
 
-  <svg width="400" height="260" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img">
+  <svg width="400" height="460" viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg" role="img">
     <title>Most Used Languages</title>
     <style>
       .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7aa2f7; }
@@ -7,7 +7,7 @@
       .lang-percent { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #565f89; }
       .bg { fill: #1a1b26; stroke: #414868; stroke-width: 1px; rx: 10px; }
     </style>
-    <rect x="1" y="1" width="398" height="258" class="bg"/>
+    <rect x="1" y="1" width="398" height="458" class="bg"/>
     <text x="200" y="30" class="header" text-anchor="middle">Top Languages</text>
     
     <g transform="translate(25, 50)">
@@ -16,7 +16,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="502.608324113644" height="8" rx="4" fill="#3178c6" />
+      <rect x="0" y="8" width="502.6082933781211" height="8" rx="4" fill="#3178c6" />
     </g>
     
     <g transform="translate(25, 90)">
@@ -25,7 +25,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="209.8711502038442" height="8" rx="4" fill="#f1e05a" />
+      <rect x="0" y="8" width="209.8711893490274" height="8" rx="4" fill="#f1e05a" />
     </g>
     
     <g transform="translate(25, 130)">
@@ -34,7 +34,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="64.34000069957933" height="8" rx="4" fill="#4B6C4B" />
+      <rect x="0" y="8" width="64.33999676505724" height="8" rx="4" fill="#4B6C4B" />
     </g>
     
     <g transform="translate(25, 170)">
@@ -43,7 +43,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="15.271083327972338" height="8" rx="4" fill="#3572A5" />
+      <rect x="0" y="8" width="15.271082394114481" height="8" rx="4" fill="#3572A5" />
     </g>
     
     <g transform="translate(25, 210)">
@@ -52,7 +52,52 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="14.29818799164712" height="8" rx="4" fill="#e34c26" />
+      <rect x="0" y="8" width="14.298187117283797" height="8" rx="4" fill="#e34c26" />
+    </g>
+    
+    <g transform="translate(25, 250)">
+      <text x="0" y="0" class="lang-name">CSS</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">1.3%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="11.043767430241578" height="8" rx="4" fill="#663399" />
+    </g>
+    
+    <g transform="translate(25, 290)">
+      <text x="0" y="0" class="lang-name">Kotlin</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">1.1%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="9.202195235828244" height="8" rx="4" fill="#A97BFF" />
+    </g>
+    
+    <g transform="translate(25, 330)">
+      <text x="0" y="0" class="lang-name">EJS</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">1.0%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="8.766713233942927" height="8" rx="4" fill="#a91e50" />
+    </g>
+    
+    <g transform="translate(25, 370)">
+      <text x="0" y="0" class="lang-name">Game Maker Language</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">0.4%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="6.8" height="8" rx="4" fill="#71b417" />
+    </g>
+    
+    <g transform="translate(25, 410)">
+      <text x="0" y="0" class="lang-name">Shell</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">0.4%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="6.8" height="8" rx="4" fill="#89e051" />
     </g>
     
   </svg>
