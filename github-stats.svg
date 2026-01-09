@@ -1,33 +1,59 @@
 
-  <svg width="400" height="180" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" role="img">
-    <title>Wesley's GitHub Stats</title>
+  <svg width="400" height="260" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img">
+    <title>Most Used Languages</title>
     <style>
       .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7aa2f7; }
-      .stat { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9b1d6; }
-      .value { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c0caf5; }
+      .lang-name { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9b1d6; }
+      .lang-percent { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #565f89; }
       .bg { fill: #1a1b26; stroke: #414868; stroke-width: 1px; rx: 10px; }
-      .icon { fill: #7aa2f7; }
     </style>
-    <rect x="1" y="1" width="398" height="178" class="bg"/>
+    <rect x="1" y="1" width="398" height="258" class="bg"/>
+    <text x="200" y="30" class="header" text-anchor="middle">Top Languages</text>
     
-    <text x="25" y="35" class="header">Wesleyvdk's GitHub Stats</text>
+    <g transform="translate(25, 50)">
+      <text x="0" y="0" class="lang-name">TypeScript</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">59.1%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="502.608324113644" height="8" rx="4" fill="#3178c6" />
+    </g>
     
-    <g transform="translate(25, 65)">
-        <path class="icon" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
-        <text x="25" y="5" class="stat">Total Commits (Public + Private):</text>
-        <text x="280" y="5" class="value" text-anchor="end">220</text>
+    <g transform="translate(25, 90)">
+      <text x="0" y="0" class="lang-name">JavaScript</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">24.7%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="209.8711502038442" height="8" rx="4" fill="#f1e05a" />
     </g>
-
-    <g transform="translate(25, 95)">
-        <path class="icon" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zm2.25 7.5a.75.75 0 100 1.5.75.75 0 000-1.5zM1.5 10.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zm2.25-9a3.75 3.75 0 00-3.75 3.75v6a3.75 3.75 0 003.75 3.75h6a.75.75 0 000-1.5h-6a2.25 2.25 0 01-2.25-2.25v-6A2.25 2.25 0 013.75 3.75h.75a.75.75 0 000-1.5h-.75z"/>
-        <text x="25" y="5" class="stat">Pull Requests:</text>
-        <text x="280" y="5" class="value" text-anchor="end">6</text>
+    
+    <g transform="translate(25, 130)">
+      <text x="0" y="0" class="lang-name">Yacc</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">7.6%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="64.34000069957933" height="8" rx="4" fill="#4B6C4B" />
     </g>
-
-    <g transform="translate(25, 125)">
-        <path class="icon" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"/>
-        <text x="25" y="5" class="stat">Issues Opened:</text>
-        <text x="280" y="5" class="value" text-anchor="end">0</text>
+    
+    <g transform="translate(25, 170)">
+      <text x="0" y="0" class="lang-name">Python</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">1.8%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="15.271083327972338" height="8" rx="4" fill="#3572A5" />
     </g>
+    
+    <g transform="translate(25, 210)">
+      <text x="0" y="0" class="lang-name">HTML</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">1.7%</text>
+      
+      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
+      
+      <rect x="0" y="8" width="14.29818799164712" height="8" rx="4" fill="#e34c26" />
+    </g>
+    
   </svg>
   
