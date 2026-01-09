@@ -74,7 +74,7 @@ async function main() {
       percent: (data.size / totalSize) * 100
     }))
     .sort((a, b) => b.size - a.size)
-    .slice(0, 10); // Take top 5
+    .slice(0, 10); // Take top 10
 
   // 4. Generate SVG
   // Height = Header + (5 languages * 35px spacing) + padding
