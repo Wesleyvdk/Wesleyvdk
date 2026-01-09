@@ -1,16 +1,25 @@
-## Hi there 👋
+# Hi, I’m Wesley 👋
 
-<!--
-**Wesleyvdk/Wesleyvdk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![header](https://img.shields.io/badge/Hello-World-6CC644)
 
-Here are some ideas to get you started:
+## About Me
+- 👨‍💻 Software developer / open source tinkerer
+- 🔭 Currently working on: Aylian Studios
+- 🌱 Learning: Rust & distributed systems
+- 💬 Ask me about: APIs, testing, CI/CD
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🔧 Languages & Tools
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Wesleyvdk&layout=compact)
+<img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Wesleyvdk&show_icons=true&theme=radical" />
+
+## 📌 Featured Projects
+- [awesome-project](https://github.com/Wesleyvdk/awesome-project) — short description of the repo
+- [cli-tool](https://github.com/Wesleyvdk/cli-tool) — short description
+
+## 📫 How to reach me
+- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- Email: hello@example.com
+
+---
+
+*Thanks for stopping by — feel free to explore my repos!*
