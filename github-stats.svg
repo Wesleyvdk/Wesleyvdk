@@ -12,20 +12,20 @@
     
     <g transform="translate(25, 50)">
       <text x="0" y="0" class="lang-name">TypeScript</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">59.1%</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">59.0%</text>
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="502.20727347705304" height="8" rx="4" fill="#3178c6" />
+      <rect x="0" y="8" width="501.5353291086388" height="8" rx="4" fill="#3178c6" />
     </g>
     
     <g transform="translate(25, 90)">
       <text x="0" y="0" class="lang-name">JavaScript</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">24.5%</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">24.4%</text>
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="207.96089581744053" height="8" rx="4" fill="#f1e05a" />
+      <rect x="0" y="8" width="207.53977146366012" height="8" rx="4" fill="#f1e05a" />
     </g>
     
     <g transform="translate(25, 130)">
@@ -34,7 +34,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="63.73049421657588" height="8" rx="4" fill="#4B6C4B" />
+      <rect x="0" y="8" width="63.60143888101594" height="8" rx="4" fill="#4B6C4B" />
     </g>
     
     <g transform="translate(25, 170)">
@@ -43,7 +43,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="15.12641711426889" height="8" rx="4" fill="#3572A5" />
+      <rect x="0" y="8" width="15.095785862142273" height="8" rx="4" fill="#3572A5" />
     </g>
     
     <g transform="translate(25, 210)">
@@ -52,7 +52,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="14.162738221964908" height="8" rx="4" fill="#e34c26" />
+      <rect x="0" y="8" width="14.134058435998211" height="8" rx="4" fill="#e34c26" />
     </g>
     
     <g transform="translate(25, 250)">
@@ -61,7 +61,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="11.183813535801333" height="8" rx="4" fill="#663399" />
+      <rect x="0" y="8" width="11.161166123029076" height="8" rx="4" fill="#663399" />
     </g>
     
     <g transform="translate(25, 290)">
@@ -70,7 +70,7 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="9.115021444565226" height="8" rx="4" fill="#A97BFF" />
+      <rect x="0" y="8" width="9.09656337099111" height="8" rx="4" fill="#A97BFF" />
     </g>
     
     <g transform="translate(25, 330)">
@@ -79,12 +79,12 @@
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
-      <rect x="0" y="8" width="8.683664829737918" height="8" rx="4" fill="#a91e50" />
+      <rect x="0" y="8" width="8.666080260651045" height="8" rx="4" fill="#a91e50" />
     </g>
     
     <g transform="translate(25, 370)">
       <text x="0" y="0" class="lang-name">Rust</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">0.5%</text>
+      <text x="340" y="0" class="lang-percent" text-anchor="end">0.6%</text>
       
       <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
       
