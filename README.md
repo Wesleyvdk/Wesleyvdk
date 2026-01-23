@@ -11,12 +11,12 @@
 
 ---
 
-### 👨‍💻 About Me
+###  About Me
 
 <p>
-🔭 I’m currently working on <b>Treffortly and Aylian Studios</b><br/>
-🌱 I’m currently learning <b>Rust and distributed systems/Robotics</b><br/>
-💬 Ask me about <b>APIs, testing, CI/CD, AI</b>
+ I’m currently working on <b>Treffortly and Aylian Studios</b><br/>
+ I’m currently learning <b>Rust and distributed systems/Robotics</b><br/>
+ Ask me about <b>APIs, testing, CI/CD, AI</b>
 </p>
 
 ---
