@@ -12,15 +12,15 @@
   <text class="note" x="200" y="51" text-anchor="middle">Wesleyvdk + Aylian-Studios</text>
   <g transform="translate(30, 90)">
       <text class="language" x="0" y="0">TypeScript</text>
-      <text class="percent" x="340" y="0" text-anchor="end">56.0%</text>
+      <text class="percent" x="340" y="0" text-anchor="end">55.9%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="190.25" height="8" rx="4" fill="#3178c6"/>
+      <rect x="0" y="9" width="190.22" height="8" rx="4" fill="#3178c6"/>
     </g>
 <g transform="translate(30, 130)">
       <text class="language" x="0" y="0">JavaScript</text>
       <text class="percent" x="340" y="0" text-anchor="end">17.7%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="60.24" height="8" rx="4" fill="#f1e05a"/>
+      <rect x="0" y="9" width="60.29" height="8" rx="4" fill="#f1e05a"/>
     </g>
 <g transform="translate(30, 170)">
       <text class="language" x="0" y="0">Yacc</text>
@@ -32,7 +32,7 @@
       <text class="language" x="0" y="0">Rust</text>
       <text class="percent" x="340" y="0" text-anchor="end">6.0%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="20.31" height="8" rx="4" fill="#dea584"/>
+      <rect x="0" y="9" width="20.30" height="8" rx="4" fill="#dea584"/>
     </g>
 <g transform="translate(30, 250)">
       <text class="language" x="0" y="0">HTML</text>
