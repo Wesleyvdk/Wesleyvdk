@@ -5,7 +5,7 @@
 **Developer from the Netherlands**  
 Web products · APIs · Local AI · Linux
 
-[Website](https://aylian-studios.com) · [Email](mailto:ehz@treffortly.com) · [Discord](https://discord.gg/G85n7RCpBw)
+[Website](https://aylian-studios.com) · [Email](mailto:ehzgodd@proton.me) · [Discord](https://discord.gg/G85n7RCpBw)
 
 </div>
 
@@ -64,4 +64,4 @@ Based on code bytes across personal and Aylian Studios repositories, including p
 
 Happy to talk about APIs, web products, gaming communities, Linux, or running AI locally.
 
-**[ehz@treffortly.com](mailto:ehz@treffortly.com)** · [Aylian Studios](https://aylian-studios.com) · [Discord community](https://discord.gg/G85n7RCpBw)
+**[ehzgodd@proton.me](mailto:ehzgodd@proton.me)** · [Aylian Studios](https://aylian-studios.com) · [Discord community](https://discord.gg/G85n7RCpBw)
