@@ -1,121 +1,147 @@
-const fs = require('fs');
+const fs = require('node:fs');
 
-// 1. Query to fetch repositories and their languages
-const query = `
-  query {
-    viewer {
-      login
-      repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: {field: UPDATED_AT, direction: DESC}) {
-        nodes {
-          name
-          languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
-            edges {
-              size
-              node {
-                color
-                name
-              }
-            }
-          }
-        }
+const user = process.env.STATS_USER || 'Wesleyvdk';
+const organizations = [...new Set((process.env.STATS_ORGS || 'Aylian-Studios')
+  .split(',').map(name => name.trim()).filter(Boolean))];
+const includePrivate = process.env.STATS_INCLUDE_PRIVATE !== 'false';
+const token = process.env.STATS_TOKEN || process.env.GH_TOKEN;
+const colors = {
+  TypeScript: '#3178c6', JavaScript: '#f1e05a', Rust: '#dea584', Python: '#3572A5',
+  HTML: '#e34c26', CSS: '#563d7c', Java: '#b07219', 'C#': '#178600',
+  'C++': '#f34b7d', C: '#555555', Lua: '#000080', Svelte: '#ff3e00',
+  Kotlin: '#A97BFF', Shell: '#89e051', Yacc: '#4B6C4B', EJS: '#a91e50',
+  'Game Maker Language': '#71b417', Other: '#7f8caa',
+};
+
+function xml(value) {
+  return String(value).replace(/[&<>"']/g, character => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;',
+  })[character]);
+}
+
+async function api(path) {
+  const response = await fetch(`https://api.github.com${path}`, {
+    headers: {
+      Accept: 'application/vnd.github+json',
+      Authorization: `Bearer ${token}`,
+    },
+    signal: AbortSignal.timeout(30000),
+  });
+  if (!response.ok) {
+    // API paths and response bodies may identify private repositories; don't log them.
+    throw new Error(`GitHub API returned HTTP ${response.status}. Check STATS_TOKEN access and rate limits.`);
+  }
+  return response.json();
+}
+
+async function repositories(path) {
+  const result = [];
+  for (let page = 1; ; page++) {
+    const batch = await api(`${path}${path.includes('?') ? '&' : '?'}per_page=100&page=${page}`);
+    result.push(...batch);
+    if (batch.length < 100) return result;
+  }
+}
+
+async function collectRepositories() {
+  const identity = await api('/user');
+  if (includePrivate && identity.login.toLowerCase() !== user.toLowerCase()) {
+    throw new Error(`STATS_TOKEN must belong to ${user} to include their private repositories.`);
+  }
+  const personal = includePrivate
+    ? await repositories('/user/repos?affiliation=owner')
+    : await repositories(`/users/${encodeURIComponent(user)}/repos`);
+  const all = personal.filter(repo => repo.owner.login.toLowerCase() === user.toLowerCase());
+
+  for (const organization of organizations) {
+    const path = `/orgs/${encodeURIComponent(organization)}`;
+    const owned = await repositories(`${path}/repos?type=${includePrivate ? 'all' : 'public'}`);
+    if (includePrivate) {
+      const metadata = await api(path);
+      const privateCount = owned.filter(repo => repo.private).length;
+      if (privateCount === 0 || (metadata.total_private_repos != null && privateCount < metadata.total_private_repos)) {
+        throw new Error(`STATS_TOKEN cannot read all private repositories in ${organization}. Grant repository access before publishing combined statistics.`);
       }
     }
+    all.push(...owned);
   }
-`;
 
-async function fetchStats() {
-  const response = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: {
-      Authorization: `bearer ${process.env.STATS_TOKEN}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ query }),
-  });
-  
-  const json = await response.json();
-  if (json.errors) {
-    console.error(json.errors);
-    process.exit(1);
-  }
-  return json.data.viewer;
+  return [...new Map(all.filter(repo => !repo.fork && !repo.archived && (includePrivate || !repo.private))
+    .map(repo => [repo.id, repo])).values()];
+}
+
+async function languageTotals(repos) {
+  const totals = new Map();
+  // A small worker pool avoids flooding the API on large accounts.
+  let next = 0;
+  await Promise.all(Array.from({ length: Math.min(4, repos.length) }, async () => {
+    while (next < repos.length) {
+      const repo = repos[next++];
+      const languages = await api(`/repos/${repo.full_name}/languages`);
+      for (const [name, bytes] of Object.entries(languages)) {
+        if (Number.isFinite(bytes) && bytes > 0) totals.set(name, (totals.get(name) || 0) + bytes);
+      }
+    }
+  }));
+  return totals;
+}
+
+function chart(totals) {
+  const sorted = [...totals.entries()].sort((a, b) => b[1] - a[1]);
+  const total = sorted.reduce((sum, [, bytes]) => sum + bytes, 0);
+  if (!total) throw new Error('No language data was returned; keeping the existing chart.');
+  const displayed = sorted.slice(0, 10);
+  const remainder = sorted.slice(10).reduce((sum, [, bytes]) => sum + bytes, 0);
+  if (remainder) displayed.push(['Other', remainder]);
+
+  const width = 400;
+  const trackWidth = 340;
+  const firstRow = 90;
+  const footerY = firstRow + displayed.length * 40;
+  const height = footerY + 64;
+  const scope = [user, ...organizations].join(' + ');
+  const visibility = includePrivate ? 'public + private' : 'public only';
+  const date = new Date().toISOString().slice(0, 10);
+  const rows = displayed.map(([name, bytes], index) => {
+    const percent = bytes / total * 100;
+    const barWidth = Math.min(trackWidth, Math.max(0, trackWidth * bytes / total));
+    const color = colors[name] || '#8b9bc5';
+    return `<g transform="translate(30, ${firstRow + index * 40})">
+      <text class="language" x="0" y="0">${xml(name)}</text>
+      <text class="percent" x="${trackWidth}" y="0" text-anchor="end">${percent.toFixed(1)}%</text>
+      <rect x="0" y="9" width="${trackWidth}" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="${barWidth.toFixed(2)}" height="8" rx="4" fill="${color}"/>
+    </g>`;
+  }).join('\n');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title description">
+  <title id="title">Languages across ${xml(scope)}</title>
+  <desc id="description">Combined repository code sizes, ${visibility}. Forks and archived repositories are excluded. Percentages measure bytes, not expertise or personal contributions.</desc>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, sans-serif; }
+    .heading { font-size: 18px; font-weight: 600; fill: #7aa2f7; }
+    .language { font-size: 13px; font-weight: 600; fill: #c0caf5; }
+    .percent, .note { font-size: 12px; fill: #9aa5ce; }
+  </style>
+  <rect x="1" y="1" width="398" height="${height - 2}" rx="12" fill="#1a1b26" stroke="#414868"/>
+  <text class="heading" x="200" y="30" text-anchor="middle">Code by language</text>
+  <text class="note" x="200" y="51" text-anchor="middle">${xml(scope)}</text>
+  ${rows}
+  <text class="note" x="30" y="${footerY + 6}">Repository bytes · ${visibility}</text>
+  <text class="note" x="30" y="${footerY + 25}">Excludes forks and archived repositories</text>
+  <text class="note" x="30" y="${footerY + 44}">Updated ${date}</text>
+</svg>\n`;
 }
 
 async function main() {
-  const data = await fetchStats();
-  const repoNodes = data.repositories.nodes;
-  
-  // 2. Aggregate Language Data
-  const languageStats = {};
-  let totalSize = 0;
-
-  repoNodes.forEach(repo => {
-    if (repo.languages && repo.languages.edges) {
-      repo.languages.edges.forEach(edge => {
-        const langName = edge.node.name;
-        const langColor = edge.node.color || '#ccc';
-        const langSize = edge.size;
-
-        if (!languageStats[langName]) {
-          languageStats[langName] = { size: 0, color: langColor };
-        }
-        languageStats[langName].size += langSize;
-        totalSize += langSize;
-      });
-    }
-  });
-
-  // 3. Convert to Array, Sort, and Calculate Percentage
-  let sortedLangs = Object.entries(languageStats)
-    .map(([name, data]) => ({
-      name,
-      color: data.color,
-      size: data.size,
-      percent: (data.size / totalSize) * 100
-    }))
-    .sort((a, b) => b.size - a.size)
-    .slice(0, 10); // Take top 10
-
-  // 4. Generate SVG
-  // Height = Header + (5 languages * 35px spacing) + padding
-  const svgHeight = 60 + (sortedLangs.length * 40); 
-  
-  let svgContent = '';
-  let yOffset = 50;
-
-  sortedLangs.forEach(lang => {
-    const barWidth = Math.max(2, (lang.percent * 2.5)); // Scale bar (max width ~250px)
-    
-    svgContent += `
-    <g transform="translate(25, ${yOffset})">
-      <text x="0" y="0" class="lang-name">${lang.name}</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">${lang.percent.toFixed(1)}%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="${barWidth * 3.4}" height="8" rx="4" fill="${lang.color}" />
-    </g>
-    `;
-    yOffset += 40;
-  });
-
-  const svg = `
-  <svg width="400" height="${svgHeight}" viewBox="0 0 400 ${svgHeight}" xmlns="http://www.w3.org/2000/svg" role="img">
-    <title>Most Used Languages</title>
-    <style>
-      .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7aa2f7; }
-      .lang-name { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9b1d6; }
-      .lang-percent { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #565f89; }
-      .bg { fill: #1a1b26; stroke: #414868; stroke-width: 1px; rx: 10px; }
-    </style>
-    <rect x="1" y="1" width="398" height="${svgHeight - 2}" class="bg"/>
-    <text x="200" y="30" class="header" text-anchor="middle">Top Languages</text>
-    ${svgContent}
-  </svg>
-  `;
-
+  if (!token) throw new Error('Set STATS_TOKEN or GH_TOKEN with access to the selected repositories.');
+  const repos = await collectRepositories();
+  const svg = chart(await languageTotals(repos));
   fs.writeFileSync('github-stats.svg', svg);
-  console.log('Successfully generated github-stats.svg');
+  console.log('Updated aggregate language chart for the personal account and configured organizations.');
 }
 
-main();
+main().catch(error => {
+  console.error(error.message);
+  process.exitCode = 1;
+});

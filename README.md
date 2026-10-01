@@ -26,16 +26,16 @@ I'm also exploring **Rust, distributed systems, and robotics**.
 
 ## Project highlights
 
-| Project | Focus |
-| --- | --- |
-| [Maquette](https://aylian-studios.com/projects/maquette) | A workspace for image-to-3D creations, with a browser viewer for models and environments. |
-| [Lumen](https://aylian-studios.com/projects/lumen) | An AI workspace for turning conversations into apps and experiences you can keep developing. |
-| [Carapace](https://aylian-studios.com/projects/carapace) | AI agents that navigate and act through ComputerCraft turtles, using planning and reusable skills. |
-| [Treffortly](https://aylian-studios.com/projects/treffortly) | A productivity platform bringing tasks, writing, job applications, and finances together through a GraphQL API. |
-| [Ballchasing Uploader](https://aylian-studios.com/projects/ballchasing-uploader) | A Rust desktop tool that automatically uploads Rocket League replays to ballchasing.com. |
-| [Strata contribution](https://github.com/Niko1221/Strata/pull/381) | HIP image input, native IQ PLE packing fixes, and Linux AMD GPU telemetry, validated on an RX 9070 XT. |
+| Project | Focus | Source |
+| --- | --- | --- |
+| [Maquette](https://aylian-studios.com/projects/maquette) | A workspace for image-to-3D creations, with a browser viewer for models and environments. | — |
+| [Lumen](https://aylian-studios.com/projects/lumen) | An AI workspace for turning conversations into apps and experiences you can keep developing. | — |
+| [Carapace](https://aylian-studios.com/projects/carapace) | AI agents that navigate and act through ComputerCraft turtles, using planning and reusable skills. | — |
+| [Treffortly](https://aylian-studios.com/projects/treffortly) | A productivity platform bringing tasks, writing, job applications, and finances together through a GraphQL API. | — |
+| [Ballchasing Uploader](https://aylian-studios.com/projects/ballchasing-uploader) | A Rust desktop tool that automatically uploads Rocket League replays to ballchasing.com. | [GitHub](https://github.com/Aylian-Studios/Ballchasing-uploader) |
+| [Strata contribution](https://github.com/Niko1221/Strata/pull/381) | HIP image input, native IQ PLE packing fixes, and Linux AMD GPU telemetry, validated on an RX 9070 XT. | [Pull request](https://github.com/Niko1221/Strata/pull/381) |
 
-[Explore all Aylian Studios projects →](https://aylian-studios.com/projects)
+[Explore all Aylian Studios projects →](https://aylian-studios.com/projects) · [Public source code](https://github.com/Aylian-Studios)
 
 ## Languages & tools
 
@@ -51,10 +51,12 @@ I'm also exploring **Rust, distributed systems, and robotics**.
 </p>
 
 <details>
-<summary>Language activity across my repositories</summary>
+<summary>Languages across my personal and Aylian Studios repositories</summary>
 
 <br />
-<img src="./github-stats.svg" alt="Most used languages across Wesleyvdk's repositories" width="400" />
+<img src="./github-stats.svg" alt="Combined language breakdown for Wesleyvdk and Aylian Studios" width="400" />
+
+Based on code bytes across personal and Aylian Studios repositories, including private repositories. Forks and archived repositories are excluded. Percentages describe repository code size.
 
 </details>
 

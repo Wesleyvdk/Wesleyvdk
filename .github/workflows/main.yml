@@ -2,41 +2,49 @@ name: Update Stats SVG
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day
     - cron: '0 0 * * *'
   workflow_dispatch:
   push:
-    branches:
-      - main
-      - master
+    branches: [main]
     paths:
       - 'scripts/**'
+      - '.github/workflows/main.yml'
 
 permissions:
   contents: write
+
+concurrency:
+  group: profile-language-stats
+  cancel-in-progress: false
 
 jobs:
   generate-svg:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
-          node-version: '18'
+          node-version: '24'
+          package-manager-cache: false
 
       - name: Generate Stats SVG
         env:
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
-        run: |
-          node scripts/stats.js
+          STATS_USER: Wesleyvdk
+          STATS_ORGS: Aylian-Studios
+          STATS_INCLUDE_PRIVATE: 'true'
+        run: node scripts/stats.js
 
       - name: Commit and Push
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-stats.svg
-          # Only commit if the file has changed
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update stats SVG" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "Update aggregate language chart"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

@@ -1,104 +1,82 @@
-
-  <svg width="400" height="460" viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg" role="img">
-    <title>Most Used Languages</title>
-    <style>
-      .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #7aa2f7; }
-      .lang-name { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9b1d6; }
-      .lang-percent { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #565f89; }
-      .bg { fill: #1a1b26; stroke: #414868; stroke-width: 1px; rx: 10px; }
-    </style>
-    <rect x="1" y="1" width="398" height="458" class="bg"/>
-    <text x="200" y="30" class="header" text-anchor="middle">Top Languages</text>
-    
-    <g transform="translate(25, 50)">
-      <text x="0" y="0" class="lang-name">TypeScript</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">59.4%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="504.71404043313635" height="8" rx="4" fill="#3178c6" />
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="594" viewBox="0 0 400 594" role="img" aria-labelledby="title description">
+  <title id="title">Languages across Wesleyvdk + Aylian-Studios</title>
+  <desc id="description">Combined repository code sizes, public + private. Forks and archived repositories are excluded. Percentages measure bytes, not expertise or personal contributions.</desc>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, sans-serif; }
+    .heading { font-size: 18px; font-weight: 600; fill: #7aa2f7; }
+    .language { font-size: 13px; font-weight: 600; fill: #c0caf5; }
+    .percent, .note { font-size: 12px; fill: #9aa5ce; }
+  </style>
+  <rect x="1" y="1" width="398" height="592" rx="12" fill="#1a1b26" stroke="#414868"/>
+  <text class="heading" x="200" y="30" text-anchor="middle">Code by language</text>
+  <text class="note" x="200" y="51" text-anchor="middle">Wesleyvdk + Aylian-Studios</text>
+  <g transform="translate(30, 90)">
+      <text class="language" x="0" y="0">TypeScript</text>
+      <text class="percent" x="340" y="0" text-anchor="end">56.0%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="190.25" height="8" rx="4" fill="#3178c6"/>
     </g>
-    
-    <g transform="translate(25, 90)">
-      <text x="0" y="0" class="lang-name">JavaScript</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">24.1%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="204.75053569522296" height="8" rx="4" fill="#f1e05a" />
+<g transform="translate(30, 130)">
+      <text class="language" x="0" y="0">JavaScript</text>
+      <text class="percent" x="340" y="0" text-anchor="end">17.7%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="60.24" height="8" rx="4" fill="#f1e05a"/>
     </g>
-    
-    <g transform="translate(25, 130)">
-      <text x="0" y="0" class="lang-name">Yacc</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">7.4%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="62.74666580788445" height="8" rx="4" fill="#4B6C4B" />
+<g transform="translate(30, 170)">
+      <text class="language" x="0" y="0">Yacc</text>
+      <text class="percent" x="340" y="0" text-anchor="end">6.4%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="21.70" height="8" rx="4" fill="#4B6C4B"/>
     </g>
-    
-    <g transform="translate(25, 170)">
-      <text x="0" y="0" class="lang-name">HTML</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">1.8%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="14.941671392950708" height="8" rx="4" fill="#e34c26" />
+<g transform="translate(30, 210)">
+      <text class="language" x="0" y="0">Rust</text>
+      <text class="percent" x="340" y="0" text-anchor="end">6.0%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="20.31" height="8" rx="4" fill="#dea584"/>
     </g>
-    
-    <g transform="translate(25, 210)">
-      <text x="0" y="0" class="lang-name">Python</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">1.8%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="14.892905683647294" height="8" rx="4" fill="#3572A5" />
+<g transform="translate(30, 250)">
+      <text class="language" x="0" y="0">HTML</text>
+      <text class="percent" x="340" y="0" text-anchor="end">3.5%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="11.76" height="8" rx="4" fill="#e34c26"/>
     </g>
-    
-    <g transform="translate(25, 250)">
-      <text x="0" y="0" class="lang-name">CSS</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">1.3%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="11.01116536149662" height="8" rx="4" fill="#663399" />
+<g transform="translate(30, 290)">
+      <text class="language" x="0" y="0">Python</text>
+      <text class="percent" x="340" y="0" text-anchor="end">2.5%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="8.53" height="8" rx="4" fill="#3572A5"/>
     </g>
-    
-    <g transform="translate(25, 290)">
-      <text x="0" y="0" class="lang-name">Kotlin</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">1.1%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="8.974309887982596" height="8" rx="4" fill="#A97BFF" />
+<g transform="translate(30, 330)">
+      <text class="language" x="0" y="0">C++</text>
+      <text class="percent" x="340" y="0" text-anchor="end">2.3%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="7.94" height="8" rx="4" fill="#f34b7d"/>
     </g>
-    
-    <g transform="translate(25, 330)">
-      <text x="0" y="0" class="lang-name">EJS</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">1.0%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="8.549612265795478" height="8" rx="4" fill="#a91e50" />
+<g transform="translate(30, 370)">
+      <text class="language" x="0" y="0">Kotlin</text>
+      <text class="percent" x="340" y="0" text-anchor="end">1.7%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="5.72" height="8" rx="4" fill="#A97BFF"/>
     </g>
-    
-    <g transform="translate(25, 370)">
-      <text x="0" y="0" class="lang-name">Rust</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">0.6%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="6.8" height="8" rx="4" fill="#dea584" />
+<g transform="translate(30, 410)">
+      <text class="language" x="0" y="0">CSS</text>
+      <text class="percent" x="340" y="0" text-anchor="end">1.6%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="5.32" height="8" rx="4" fill="#563d7c"/>
     </g>
-    
-    <g transform="translate(25, 410)">
-      <text x="0" y="0" class="lang-name">Game Maker Language</text>
-      <text x="340" y="0" class="lang-percent" text-anchor="end">0.4%</text>
-      
-      <rect x="0" y="8" width="340" height="8" rx="4" fill="#24283b" />
-      
-      <rect x="0" y="8" width="6.8" height="8" rx="4" fill="#71b417" />
+<g transform="translate(30, 450)">
+      <text class="language" x="0" y="0">EJS</text>
+      <text class="percent" x="340" y="0" text-anchor="end">0.7%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="2.51" height="8" rx="4" fill="#a91e50"/>
     </g>
-    
-  </svg>
-  
+<g transform="translate(30, 490)">
+      <text class="language" x="0" y="0">Other</text>
+      <text class="percent" x="340" y="0" text-anchor="end">1.7%</text>
+      <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
+      <rect x="0" y="9" width="5.72" height="8" rx="4" fill="#7f8caa"/>
+    </g>
+  <text class="note" x="30" y="536">Repository bytes · public + private</text>
+  <text class="note" x="30" y="555">Excludes forks and archived repositories</text>
+  <text class="note" x="30" y="574">Updated 2026-10-01</text>
+</svg>
