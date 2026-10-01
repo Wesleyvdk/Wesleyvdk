@@ -1,50 +1,62 @@
 <div align="center">
 
-<h1>Hi there, I'm Wesley Also known as Ehz 👋</h1>
-<h3>A passionate developer from the Netherlands</h3>
+# Wesley · Ehz
 
-<a href="https://github.com/Wesleyvdk">
-  <img src="https://komarev.com/ghpvc/?username=Wesleyvdk&style=flat-square&color=blue" alt="Profile Views" />
-</a>
+**Developer from the Netherlands**  
+Web products · APIs · Local AI · Linux
 
-<br/><br/>
-
----
-
-###  About Me
-
-<p>
- I’m currently working on <b>Treffortly and Aylian Studios</b><br/>
- I’m currently learning <b>Rust and distributed systems/Robotics</b><br/>
- Ask me about <b>APIs, testing, CI/CD, AI</b>
-</p>
-
----
-
-### 🛠️ Languages and Tools
-
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
-<img src="https://img.shields.io/badge/Rust-black?style=flat&logo=rust&logoColor=white" alt="Rust" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" alt="Java" />
-<img src="https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white" alt="C#" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git" />
-
----
-
-### 📊 Most Used Languages
-
-<a href="https://github.com/Wesleyvdk">
-  <img src="./github-stats.svg" alt="Wesleyvdk's Top Languages" />
-</a>
-
-<br/>
-
----
-
-### 📫 Connect with Me
-
-<a href="mailto:ehz@treffortly.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://discord.gg/G85n7RCpBw" target="blank"><img align="center" src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[Website](https://aylian-studios.com) · [Email](mailto:ehz@treffortly.com) · [Discord](https://discord.gg/G85n7RCpBw)
 
 </div>
+
+---
+
+## About me
+
+I build web applications, APIs, and tools for gaming communities. I also run AI locally and contribute improvements back to the software I use.
+
+## What I'm focused on
+
+- **Aylian Studios & Treffortly** — building web products and the services behind them. [Visit Aylian Studios](https://aylian-studios.com).
+- **APIs & automation** — connecting applications, building Discord integrations, and working with testing and CI/CD.
+- **Local AI & Linux** — running Qwen models through Strata on an AMD RX 9070 XT, with ROCm and Omarchy.
+- **Open source** — contributing HIP image input and AMD GPU monitoring improvements to Strata.
+
+I'm also exploring **Rust, distributed systems, and robotics**.
+
+## Project highlights
+
+| Project | Focus |
+| --- | --- |
+| [RL Tracker](https://github.com/Wesleyvdk/rl-tracker) | Rocket League player stats and rank cards, with Discord integration. |
+| [NatureBot](https://github.com/Wesleyvdk/NatureBot) | A Discord game with dungeons, loot, and persistent player progress. |
+| [Strata contribution](https://github.com/Niko1221/Strata/pull/381) | HIP image input, native IQ PLE packing fixes, and Linux AMD GPU telemetry, validated on an RX 9070 XT. |
+
+[Browse my public repositories →](https://github.com/Wesleyvdk?tab=repositories)
+
+## Languages & tools
+
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&amp;logo=rust&amp;logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&amp;logo=openjdk&amp;logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square" alt="C#" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&amp;logo=linux&amp;logoColor=black" alt="Linux" />
+</p>
+
+<details>
+<summary>Language activity across my repositories</summary>
+
+<br />
+<img src="./github-stats.svg" alt="Most used languages across Wesleyvdk's repositories" width="400" />
+
+</details>
+
+## Get in touch
+
+Happy to talk about APIs, web products, gaming communities, Linux, or running AI locally.
+
+**[ehz@treffortly.com](mailto:ehz@treffortly.com)** · [Aylian Studios](https://aylian-studios.com) · [Discord community](https://discord.gg/G85n7RCpBw)
