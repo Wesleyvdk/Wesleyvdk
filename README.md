@@ -28,11 +28,14 @@ I'm also exploring **Rust, distributed systems, and robotics**.
 
 | Project | Focus |
 | --- | --- |
-| [RL Tracker](https://github.com/Wesleyvdk/rl-tracker) | Rocket League player stats and rank cards, with Discord integration. |
-| [NatureBot](https://github.com/Wesleyvdk/NatureBot) | A Discord game with dungeons, loot, and persistent player progress. |
+| [Maquette](https://aylian-studios.com/projects/maquette) | A workspace for image-to-3D creations, with a browser viewer for models and environments. |
+| [Lumen](https://aylian-studios.com/projects/lumen) | An AI workspace for turning conversations into apps and experiences you can keep developing. |
+| [Carapace](https://aylian-studios.com/projects/carapace) | AI agents that navigate and act through ComputerCraft turtles, using planning and reusable skills. |
+| [Treffortly](https://aylian-studios.com/projects/treffortly) | A productivity platform bringing tasks, writing, job applications, and finances together through a GraphQL API. |
+| [Ballchasing Uploader](https://aylian-studios.com/projects/ballchasing-uploader) | A Rust desktop tool that automatically uploads Rocket League replays to ballchasing.com. |
 | [Strata contribution](https://github.com/Niko1221/Strata/pull/381) | HIP image input, native IQ PLE packing fixes, and Linux AMD GPU telemetry, validated on an RX 9070 XT. |
 
-[Browse my public repositories →](https://github.com/Wesleyvdk?tab=repositories)
+[Explore all Aylian Studios projects →](https://aylian-studios.com/projects)
 
 ## Languages & tools
 
