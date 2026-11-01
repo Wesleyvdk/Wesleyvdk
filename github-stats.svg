@@ -14,7 +14,7 @@
       <text class="language" x="0" y="0">TypeScript</text>
       <text class="percent" x="340" y="0" text-anchor="end">42.8%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="145.58" height="8" rx="4" fill="#3178c6"/>
+      <rect x="0" y="9" width="145.46" height="8" rx="4" fill="#3178c6"/>
     </g>
 <g transform="translate(30, 130)">
       <text class="language" x="0" y="0">JavaScript</text>
@@ -24,59 +24,59 @@
     </g>
 <g transform="translate(30, 170)">
       <text class="language" x="0" y="0">Rust</text>
-      <text class="percent" x="340" y="0" text-anchor="end">4.2%</text>
+      <text class="percent" x="340" y="0" text-anchor="end">4.3%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="14.33" height="8" rx="4" fill="#dea584"/>
+      <rect x="0" y="9" width="14.51" height="8" rx="4" fill="#dea584"/>
     </g>
 <g transform="translate(30, 210)">
       <text class="language" x="0" y="0">Yacc</text>
-      <text class="percent" x="340" y="0" text-anchor="end">3.4%</text>
+      <text class="percent" x="340" y="0" text-anchor="end">3.3%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="11.42" height="8" rx="4" fill="#4B6C4B"/>
+      <rect x="0" y="9" width="11.36" height="8" rx="4" fill="#4B6C4B"/>
     </g>
 <g transform="translate(30, 250)">
       <text class="language" x="0" y="0">HTML</text>
       <text class="percent" x="340" y="0" text-anchor="end">2.7%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="9.21" height="8" rx="4" fill="#e34c26"/>
+      <rect x="0" y="9" width="9.19" height="8" rx="4" fill="#e34c26"/>
     </g>
 <g transform="translate(30, 290)">
       <text class="language" x="0" y="0">C++</text>
-      <text class="percent" x="340" y="0" text-anchor="end">2.7%</text>
+      <text class="percent" x="340" y="0" text-anchor="end">2.6%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="9.05" height="8" rx="4" fill="#f34b7d"/>
+      <rect x="0" y="9" width="9.00" height="8" rx="4" fill="#f34b7d"/>
     </g>
 <g transform="translate(30, 330)">
       <text class="language" x="0" y="0">Python</text>
-      <text class="percent" x="340" y="0" text-anchor="end">2.4%</text>
+      <text class="percent" x="340" y="0" text-anchor="end">2.3%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="8.02" height="8" rx="4" fill="#3572A5"/>
+      <rect x="0" y="9" width="7.98" height="8" rx="4" fill="#3572A5"/>
     </g>
 <g transform="translate(30, 370)">
       <text class="language" x="0" y="0">CSS</text>
       <text class="percent" x="340" y="0" text-anchor="end">1.5%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="5.14" height="8" rx="4" fill="#563d7c"/>
+      <rect x="0" y="9" width="5.24" height="8" rx="4" fill="#563d7c"/>
     </g>
 <g transform="translate(30, 410)">
       <text class="language" x="0" y="0">Kotlin</text>
       <text class="percent" x="340" y="0" text-anchor="end">1.4%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="4.60" height="8" rx="4" fill="#A97BFF"/>
+      <rect x="0" y="9" width="4.64" height="8" rx="4" fill="#A97BFF"/>
     </g>
 <g transform="translate(30, 450)">
       <text class="language" x="0" y="0">Java</text>
       <text class="percent" x="340" y="0" text-anchor="end">1.0%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="3.35" height="8" rx="4" fill="#b07219"/>
+      <rect x="0" y="9" width="3.33" height="8" rx="4" fill="#b07219"/>
     </g>
 <g transform="translate(30, 490)">
       <text class="language" x="0" y="0">Other</text>
       <text class="percent" x="340" y="0" text-anchor="end">1.4%</text>
       <rect x="0" y="9" width="340" height="8" rx="4" fill="#292e42"/>
-      <rect x="0" y="9" width="4.85" height="8" rx="4" fill="#7f8caa"/>
+      <rect x="0" y="9" width="4.83" height="8" rx="4" fill="#7f8caa"/>
     </g>
   <text class="note" x="30" y="536">Repository bytes · public + private</text>
   <text class="note" x="30" y="555">Excludes forks and archived repositories</text>
-  <text class="note" x="30" y="574">Updated 2026-10-31</text>
+  <text class="note" x="30" y="574">Updated 2026-11-01</text>
 </svg>
